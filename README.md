@@ -6,6 +6,7 @@
 
 ## Results
 
+
     ### Data Pre-Processing
         * 'IS_SUCCESSFUL' column is the target for the model
         * 'EIN' and 'NAME' columns were removed since they had nothing significant to contribute to the model and would just confuse it.
@@ -16,15 +17,15 @@
     
         * For the first model, I used 2 layers, first with 80 nuerons and second with 30. Both had activation 'relu'. For output layer, I used 'sigmoid' activation. After compliling and fitting the model, we get the model loss and accuracy scores.
         
-          ![First_Score](Images/Accuracy_score.png)
+![First_Score](Images/Accuracy_score.png)
           
         * In order to optimize the model and get better predictions, in my first attempt I added more hidden layers and nuerons in attempt to improve the accuracy score. The accuracy scored did improve a little. 
         
-        ![Second_Score](Images/Accuracy_score_optimized_1.png)
+![Second_Score](Images/Accuracy_score_optimized_1.png)
         
         * In the second attempt, I changed the hidden layer activation to sigmoid and moved it around the layers. The score did improve but only marginaly.
         
-        ![Third_Score](Images/Accuracy_score_optimized_2.png)
+![Third_Score](Images/Accuracy_score_optimized_2.png)
         
         * In the final attempt to improve the score, I removed 'SPECIAL_CONSIDERATIONS' and 'Status' columns from the dataset since that data is very skewed and seems unnecesery for the model. This did not change the outcome.
         
@@ -36,8 +37,8 @@
     
     Keras-Tuner was also used in the end to see what would be the optimal parameters for the model to achieve the highest accuracy score. Unfortunataly, even with this the top accuracy score is 73.3%.
     
-    ![Tuner_1](Images/Accuracy_score_optimized_2.png)
+![Tuner_1](Images/Accuracy_score_optimized_2.png)
     
     
-    ![Tuner_2(Images/Accuracy_score_optimized_2.png)
+![Tuner_2(Images/Accuracy_score_optimized_2.png)
 
