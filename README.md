@@ -2,13 +2,13 @@
 
 ## Overview
 
-    Working for Alphabet Soup, the purpose of this analysis is to create an
-    algorithm model to predict wheter or not applicants for funding will be
-    succesfull. A CSV file with company's past funding data that contained over
-    34,000 rows of data is used to train the model. Pandas is used to
-    preproccess and import the data, Scikit Learn is used to standardize and
-    split the data into train/test data, and Python's TenserFlow library is
-    used to train and evaluate the data. 
+    The purpose of this analysis is to create analgorithm model to predict whether 
+    or not application for funding by a non-profit company Alphabet Soup will be 
+    succesfull or not. A CSV file with company's past funding that contained over
+    34,000 of data will be utilized to train the model. Pandas is used to import the
+    data and preproccess it, Scikit Learn is used to standardize and split the data 
+    into train/test data. Python's TenserFlow library is used to train and evaluate 
+    the data. 
 
 ## Results
 
@@ -18,12 +18,12 @@
         * 'EIN' and 'NAME' columns were removed since they had nothing significant
           to contribute to the model and would just confuse it.
         * The rest of the columns are considered features for the model. Object
-          data types were one-hot encoded using pandas get_dummies function.
+          data types were one-hot-encoded employing pandas get_dummies function.
         * With the StandardScaler function of Scikit Learn, we standardize the data.
         
     ### Compiling, Training, and Evaluating the Model
     
-        * For the first model, I used 2 layers, first with 80 nuerons and second
+        * For the first model, I used 2 layers, first with 80 nuerons and the second
           with 30. Both had activation 'relu'. For output layer, I used 'sigmoid'
           activation. After compliling and fitting the model, we get the model loss
           and accuracy scores.
